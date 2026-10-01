@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Казино live 2026: правила стола с дилером и расчёт ставки по пунктам</title>
+<meta name="description" content="Казино live в 2026 году: разбираем по пунктам правила живого стола — кто пишет регламент, как считается ставка, что такое окно «ставки сделаны», честность без ГСЧ и лицензия студии против лицензии оператора.">
+<link rel="canonical" href="https://kazino-live709.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Правила живого стола по пунктам: студия, провайдер, лимиты и честность без ГСЧ">
+<meta property="og:description" content="Разбор условий игры за live-столом в 2026 году: расчёт ставки, окно приёма, Round ID и спор, два вида лицензий. С таблицами и схемами.">
+<meta property="og:url" content="https://kazino-live709.github.io/">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --fog:#e8edf3;--surf:#f5f7fb;--surf-2:#dce3ee;--lift:#ffffff;
+  --ink:#131a2c;--ink-2:#3a455c;--ink-3:#687489;--edge:#ccd4e1;--edge-2:#a6b2c5;
+  --navy:#1f3a6d;--navy-fill:#274c8a;--navy-soft:#dde6f6;--on-navy:#f2f6fc;
+  --ok:#1d6c56;--ok-soft:#d7ebe2;--no:#9f3030;--no-soft:#f3dede;--mid:#86620f;--mid-soft:#f1e8cd;
+  --c1:#1f3a6d;--c2:#20718a;--c3:#9a561f;--c4:#5a4a9a;--rule:#b5c0d2;
+  --serif:"Cormorant Garamond","PT Serif",Georgia,serif;
+  --sans:"Inter","Segoe UI",Roboto,system-ui,sans-serif;
+  --z-h1:clamp(2.4rem,1.6rem + 3.4vw,3.75rem);--z-h2:clamp(1.7rem,1.3rem + 1.5vw,2.35rem);--z-h3:1.22rem;
+  --z-lead:clamp(1.08rem,1rem + .4vw,1.22rem);--z-body:1.0625rem;--z-ui:.94rem;--z-sm:.86rem;--z-xs:.76rem;
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:34px;--s7:52px;--s8:72px;
+  --pad:clamp(16px,4vw,26px);--air:clamp(42px,6vw,76px);--read:70ch;--full:1060px;
+  --rd-1:4px;--rd-2:8px;--rd-3:13px;
+  --sh-1:0 1px 2px rgba(19,26,44,.07),0 1px 0 rgba(19,26,44,.04);
+  --sh-2:0 10px 30px -16px rgba(19,26,44,.34);
+  --mv:cubic-bezier(.2,.8,.3,1);--t1:140ms;--t2:240ms;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --fog:#0c1322;--surf:#121b2e;--surf-2:#1a2540;--lift:#1f2b47;
+  --ink:#e7edf7;--ink-2:#afbace;--ink-3:#808ca4;--edge:#27334d;--edge-2:#3c4a6b;
+  --navy:#85a3df;--navy-fill:#6286cf;--navy-soft:#19284a;--on-navy:#0a1120;
+  --ok:#64c09d;--ok-soft:#133329;--no:#ef8585;--no-soft:#391f1f;--mid:#d8b45c;--mid-soft:#312913;
+  --c1:#85a3df;--c2:#44b7cc;--c3:#d79355;--c4:#a596e6;--rule:#36456a;
+  --sh-1:0 1px 2px rgba(0,0,0,.5);--sh-2:0 12px 30px -16px rgba(0,0,0,.72);
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --fog:#0c1322;--surf:#121b2e;--surf-2:#1a2540;--lift:#1f2b47;
+  --ink:#e7edf7;--ink-2:#afbace;--ink-3:#808ca4;--edge:#27334d;--edge-2:#3c4a6b;
+  --navy:#85a3df;--navy-fill:#6286cf;--navy-soft:#19284a;--on-navy:#0a1120;
+  --ok:#64c09d;--ok-soft:#133329;--no:#ef8585;--no-soft:#391f1f;--mid:#d8b45c;--mid-soft:#312913;
+  --c1:#85a3df;--c2:#44b7cc;--c3:#d79355;--c4:#a596e6;--rule:#36456a;
+  --sh-1:0 1px 2px rgba(0,0,0,.5);--sh-2:0 12px 30px -16px rgba(0,0,0,.72);
+  color-scheme:dark;}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:62px}
+body{margin:0;background:var(--fog);color:var(--ink);font:400 var(--z-body)/1.64 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3{font-family:var(--serif);margin:0;text-wrap:balance;letter-spacing:.01em}
+h1{font-size:var(--z-h1);line-height:1.04;font-weight:600}
+h2{font-size:var(--z-h2);line-height:1.12;font-weight:600;max-width:24ch}
+h3{font-size:var(--z-h3);line-height:1.3;font-weight:600;font-family:var(--sans);letter-spacing:0;margin:var(--s6) 0 var(--s2)}
+p{margin:0 0 var(--s3);text-wrap:pretty}
+a{color:var(--navy);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--navy);outline-offset:2px;border-radius:2px}
+.pst-num{font-variant-numeric:tabular-nums}
+.pst-mut{color:var(--ink-3);font-size:var(--z-sm)}
+
+.pst-top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--surf) 92%,transparent);backdrop-filter:none;border-bottom:1px solid var(--edge);height:56px}
+.pst-top .pst-in{max-width:var(--full);margin:0 auto;padding:0 var(--pad);height:100%;display:flex;align-items:center;gap:var(--s4)}
+.pst-mark{font-family:var(--serif);font-weight:700;font-size:1.28rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:9px;white-space:nowrap;letter-spacing:.02em}
+.pst-mark svg{width:24px;height:24px;flex:none}
+.pst-nav{display:flex;gap:1px;overflow-x:auto;scrollbar-width:none;margin-left:auto;mask-image:linear-gradient(90deg,#000 90%,transparent)}
+.pst-nav::-webkit-scrollbar{display:none}
+.pst-nav a{color:var(--ink-2);text-decoration:none;font-size:var(--z-ui);padding:6px 11px;border-radius:var(--rd-1);white-space:nowrap}
+.pst-nav a:hover{background:var(--surf-2);color:var(--ink)}
+.pst-theme{border:1px solid var(--edge-2);background:var(--lift);color:var(--ink-2);border-radius:var(--rd-1);width:34px;height:34px;display:grid;place-items:center;cursor:pointer;flex:none}
+.pst-theme svg{width:18px;height:18px}
+
+.pst-hero{max-width:var(--full);margin:0 auto;padding:var(--air) var(--pad) var(--s7);display:grid;grid-template-columns:minmax(0,1.55fr) minmax(270px,.85fr);gap:var(--s7);align-items:start}
+.pst-kick{color:var(--ink-3);font-size:var(--z-sm);margin-bottom:var(--s4);letter-spacing:.02em}
+.pst-hero h1{max-width:18ch}
+.pst-lead{font-size:var(--z-lead);color:var(--ink-2);margin-top:var(--s5);max-width:var(--read)}
+.pst-note{display:inline-block;margin-top:var(--s4);padding:5px 11px;border:1px dashed var(--edge-2);border-radius:var(--rd-1);font-size:var(--z-sm);color:var(--ink-2);background:var(--surf)}
+.pst-card{background:var(--lift);border:1px solid var(--edge);border-radius:var(--rd-3);padding:var(--s5);box-shadow:var(--sh-1)}
+.pst-card h2{font-size:1.18rem;margin-bottom:var(--s4);max-width:none}
+.pst-card dl{margin:0;display:grid;gap:var(--s4)}
+.pst-card dt{font-size:var(--z-xs);color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em}
+.pst-card dd{margin:2px 0 0;font-weight:600;font-size:1.02rem}
+.pst-card dd span{display:block;font-weight:400;color:var(--ink-2);font-size:var(--z-sm);margin-top:2px}
+
+.pst-sec{max-width:var(--full);margin:0 auto;padding:var(--s7) var(--pad)}
+.pst-sec + .pst-sec{border-top:1px solid var(--edge)}
+.pst-sec > p,.pst-sec > h3,.pst-sec > ul,.pst-sec > ol{max-width:var(--read)}
+.pst-sec ul,.pst-sec ol{padding-left:1.25em}
+.pst-sec li{margin-bottom:var(--s3)}
+.pst-idx{font-family:var(--serif);color:var(--navy);font-size:1.5rem;font-weight:600;line-height:1;margin-bottom:var(--s2)}
+
+.pst-scroll{overflow-x:auto;margin:var(--s5) 0;border:1px solid var(--edge);border-radius:var(--rd-2);background:var(--surf)}
+table{border-collapse:collapse;width:100%;font-size:var(--z-ui);min-width:620px}
+caption{text-align:left;padding:var(--s3) var(--s4);color:var(--ink-2);font-size:var(--z-sm);caption-side:top}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--edge)}
+thead th{font-weight:600;color:var(--ink-2);background:var(--surf-2);font-size:var(--z-sm);position:sticky;top:0}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+tbody th{font-weight:600;background:var(--surf);position:sticky;left:0;z-index:1;box-shadow:1px 0 0 var(--edge)}
+.pst-wide{min-width:780px}
+.pst-ok{color:var(--ok);font-weight:500}.pst-no2{color:var(--ink-3)}.pst-mid2{color:var(--mid)}.pst-bad{color:var(--no)}
+.pst-sw{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:7px;vertical-align:baseline}
+.pst-s1{background:var(--c1)}.pst-s2{background:var(--c2)}.pst-s3{background:var(--c3)}.pst-s4{background:var(--c4)}
+
+.pst-fig{margin:var(--s5) 0;background:var(--lift);border:1px solid var(--edge);border-radius:var(--rd-3);padding:var(--s4);box-shadow:var(--sh-1)}
+.pst-fig svg{width:100%;height:auto;display:block;font-family:var(--sans)}
+.pst-fig figcaption{margin-top:var(--s3);color:var(--ink-3);font-size:var(--z-sm);max-width:none}
+.pst-fig .pst-scroll{margin:var(--s4) 0 0}
+.pst-fig table{min-width:500px}
+
+.pst-roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:var(--s4);margin:var(--s5) 0}
+.pst-role{background:var(--surf);border:1px solid var(--edge);border-radius:var(--rd-2);padding:var(--s4)}
+.pst-role .pst-tag{font-size:var(--z-xs);color:var(--navy);text-transform:uppercase;letter-spacing:.05em;margin-bottom:var(--s1)}
+.pst-role h3{margin:0 0 var(--s2);font-size:1.04rem}
+.pst-role p{margin:0;font-size:var(--z-ui);color:var(--ink-2)}
+
+.pst-faq{border:1px solid var(--edge);border-radius:var(--rd-2);background:var(--surf);margin-bottom:var(--s3);max-width:var(--read)}
+.pst-faq summary{cursor:pointer;padding:var(--s3) var(--s4);font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:var(--s3)}
+.pst-faq summary::-webkit-details-marker{display:none}
+.pst-faq summary::after{content:"+";color:var(--navy);font-weight:400;flex:none}
+.pst-faq[open] summary::after{content:"\2013"}
+.pst-ans{padding:0 var(--s4) var(--s4);color:var(--ink-2)}
+.pst-ans p:last-child{margin-bottom:0}
+
+.pst-feed{background:var(--navy-soft);border:1px solid var(--edge);border-radius:var(--rd-3);padding:var(--s5);max-width:var(--read)}
+.pst-feed p{margin-bottom:var(--s3)}
+.pst-go{display:inline-block;background:var(--navy-fill);color:var(--on-navy);text-decoration:none;padding:11px 19px;border-radius:var(--rd-2);font-weight:600;transition:background var(--t1) var(--mv)}
+.pst-go:hover{background:var(--navy)}
+.pst-18{border:1px solid var(--edge-2);border-radius:var(--rd-2);padding:var(--s4);font-size:var(--z-ui);color:var(--ink-2);max-width:var(--read)}
+.pst-18 b{color:var(--ink)}
+
+.pst-foot{border-top:1px solid var(--edge);background:var(--surf);margin-top:var(--s7)}
+.pst-foot .pst-in{max-width:var(--full);margin:0 auto;padding:var(--s6) var(--pad);display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:var(--s5);font-size:var(--z-sm);color:var(--ink-3)}
+.pst-foot b{color:var(--ink-2)}
+
+@media (max-width:840px){.pst-hero{grid-template-columns:1fr;gap:var(--s5)}}
+@media (prefers-reduced-motion:reduce){*{transition-duration:1ms!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","@id":"https://kazino-live709.github.io/#page","headline":"Казино live в 2026 году: правила живого стола и расчёт ставки по пунктам","description":"Казино live в 2026 году: разбираем по пунктам правила живого стола — кто пишет регламент, как считается ставка, что такое окно «ставки сделаны», честность без ГСЧ и лицензия студии против лицензии оператора.","inLanguage":"ru","datePublished":"2026-10-01","dateModified":"2026-10-01","author":{"@type":"Organization","name":"Редакция «Протокол стола»"},"publisher":{"@type":"Organization","name":"Протокол стола"},"mainEntityOfPage":"https://kazino-live709.github.io/"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","@id":"https://kazino-live709.github.io/#faq","mainEntity":[
+{"@type":"Question","name":"Чем live-стол отличается от обычного слота в правилах игры?","acceptedAnswer":{"@type":"Answer","text":"Слот работает на генераторе случайных чисел: исход вычисляет сертифицированная программа на сервере. За живым столом исхода нет внутри программы — его создаёт физический предмет: колесо, карты из башмака, кости. Правила такого стола описывают не алгоритм, а процедуру: когда дилер принимает ставки, когда объявляет «ставки сделаны», как вскрывает карту, что делает при ошибке. Поэтому проверка честности тоже другая: вместо сертификата ГСЧ проверяют оборудование, камеры и журнал раундов."}},
+{"@type":"Question","name":"Кто задаёт лимиты стола — провайдер или оператор?","acceptedAnswer":{"@type":"Answer","text":"Студия-провайдер задаёт коридор: технический минимум и максимум, которые допускает стол. Оператор внутри этого коридора выставляет свои числа и показывает их в лобби. Поэтому один и тот же стол Evolution в двух залах принимает ставку от 50 ₽ на одном и от 150 ₽ на другом. Верхняя граница на выделенном столе, который студия сдаёт одному оператору, оговаривается в договоре и обычно выше, чем на общем."}},
+{"@type":"Question","name":"Почему результат на видео появляется позже, чем закрылся приём ставок?","acceptedAnswer":{"@type":"Answer","text":"Между событием в студии и картинкой на экране есть задержка трансляции. По WebRTC она меньше секунды, и таймер на экране совпадает с реальным. При откате на HLS задержка вырастает до 6–30 секунд: игрок видит команду «ставки сделаны» и выпавший номер уже после того, как реальный стол закрыл приём. Ставку это не отменяет — она принята по таймеру сервера, а не по картинке, но играть вслепую неудобно. Помогает смена сети или браузера, которая возвращает поток на WebRTC."}},
+{"@type":"Question","name":"Как проверить честность стола, если генератора случайных чисел нет?","acceptedAnswer":{"@type":"Answer","text":"Смотрят на четыре вещи. Первое: у стола указан провайдер и его сертификация лабораторией — GLI по стандарту GLI-19, BMM Testlabs или iTech Labs проверяют колесо, башмак и логику выплат. Второе: каждый раунд имеет номер Round ID и попадает в историю. Третье: карты читаются сканером OCR, а фишки в колесе и позиции на столе отслеживаются по RFID, поэтому результат фиксируется техникой, а не только глазом дилера. Четвёртое: в кадре нет монтажных склеек в момент выпадения результата."}},
+{"@type":"Question","name":"Что делать, если возник спор о выплате за живым столом?","acceptedAnswer":{"@type":"Answer","text":"Нужно записать номер раунда Round ID и время. Жалоба идёт сначала в поддержку оператора, у которого вы играли; оператор запрашивает у студии запись раунда и журнал ставок по этому номеру. Студия поднимает видео с камеры и данные RFID и OCR, сверяет результат и возвращает решение через оператора. Если оператор отказывает без разбора, обращение направляют регулятору, выдавшему лицензию оператора. Сроки зависят от регламента студии и обычно укладываются в несколько дней."}},
+{"@type":"Question","name":"Лицензия студии и лицензия оператора — это одно и то же?","acceptedAnswer":{"@type":"Answer","text":"Нет, это два разных документа. Лицензия студии-провайдера (например, MGA на Мальте или ONJN в Румынии) разрешает производить и транслировать игру и подтверждает аудит оборудования. Лицензия оператора разрешает принимать ставки и хранить деньги игрока; для русскоязычных залов это чаще Кюрасао после реформы LOK, где лицензия стала именной. Честность раунда отвечает за лицензию студии, а сохранность депозита и выплату — за лицензию оператора."}}
+]}
+</script>
+</head>
+<body>
+
+<header class="pst-top">
+  <div class="pst-in">
+    <a class="pst-mark" href="#top" aria-label="Протокол стола — наверх">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="var(--navy)"/><path d="M7 15.5l3.4-6.8 3.4 6.8" fill="none" stroke="var(--on-navy)" stroke-width="1.7" stroke-linejoin="round"/><line x1="8.3" y1="13" x2="12.5" y2="13" stroke="var(--on-navy)" stroke-width="1.7"/><circle cx="16.4" cy="9.2" r="1.5" fill="var(--on-navy)"/></svg>
+      Протокол стола
+    </a>
+    <nav class="pst-nav" aria-label="Разделы">
+      <a href="#roles">Кто пишет правила</a>
+      <a href="#studios">Студии</a>
+      <a href="#calc">Расчёт ставки</a>
+      <a href="#limits">Лимиты</a>
+      <a href="#window">Окно ставок</a>
+      <a href="#fair">Честность</a>
+      <a href="#dispute">Спор</a>
+      <a href="#license">Лицензии</a>
+      <a href="#faq">Ответы</a>
+    </nav>
+    <button class="pst-theme" type="button" id="pstTheme" aria-label="Переключить тему" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18V3z" fill="currentColor"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="pst-hero">
+  <div>
+    <p class="pst-kick">Обновлено 1 октября 2026 · редакция «Протокол стола»</p>
+    <h1>Казино live в 2026 году: правила живого стола и расчёт ставки по пунктам</h1>
+    <p class="pst-lead">Слово «live» в лобби казино означает одно: исход создаёт не программа, а физический стол под камерой. Отсюда особые правила — своё окно приёма ставок, своя команда «ставки сделаны», своя проверка честности без сертификата генератора случайных чисел. Эта страница разбирает условия живой игры по пунктам: кто пишет регламент, как из коэффициента получается выплата, откуда берётся задержка трансляции и чем лицензия студии отличается от лицензии оператора.</p>
+    <span class="pst-note">Числа лимитов, задержек и выплат в таблицах — расчётная модель по типичным настройкам операторов на 2026 год, а не замер конкретного зала.</span>
+  </div>
+  <aside class="pst-card" aria-label="Свод правил в четыре строки">
+    <h2>Свод в четыре строки</h2>
+    <dl>
+      <dt>Кто решает исход</dt><dd>Физический стол<span>колесо, карты, кости под камерой, а не ГСЧ</span></dd>
+      <dt>Кто ставит лимиты</dt><dd>Оператор в коридоре студии<span>минимум и потолок — внутри рамки провайдера</span></dd>
+      <dt>Когда закрывается приём</dt><dd>По таймеру сервера<span>команда «ставки сделаны», не по картинке на экране</span></dd>
+      <dt>Чем доказуем раунд</dt><dd>Round ID + запись<span>видео, данные RFID и OCR по номеру раунда</span></dd>
+    </dl>
+  </aside>
+</section>
+
+<section class="pst-sec" id="roles">
+  <p class="pst-idx">01</p>
+  <h2>Студия, провайдер и оператор: кто пишет правила живого стола</h2>
+  <p>За одним живым столом казино стоят три стороны, и путать их — частая ошибка при разборе условий. Студия снимает и ведёт игру: в ней стоит колесо, работает дилер, висят камеры. Провайдер — компания, которая владеет студией, пишет регламент стола и отдаёт поток операторам; у крупных имён студия и провайдер совпадают. Оператор — это сайт, где вы заходите в лобби, пополняете счёт и видите стол в списке. Правила самой игры пишет провайдер, а условия вокруг неё — валюту, лимиты в коридоре, бонусы, сроки вывода — настраивает оператор.</p>
+  <div class="pst-roles">
+    <div class="pst-role"><p class="pst-tag">Провайдер</p><h3>Пишет регламент раунда</h3><p>Определяет порядок ставок, выплаты по коэффициентам, действия дилера при ошибке и аннуляцию. Отвечает за сертификацию оборудования.</p></div>
+    <div class="pst-role"><p class="pst-tag">Студия</p><h3>Ведёт трансляцию</h3><p>Физический зал с колесом, башмаком для карт и камерами. Дилер объявляет ставки и результат; смена работает по графику студии.</p></div>
+    <div class="pst-role"><p class="pst-tag">Оператор</p><h3>Принимает ставки и платит</h3><p>Ваш счёт, валюта, лимиты внутри коридора провайдера, вывод средств. За сохранность депозита отвечает лицензия оператора.</p></div>
+  </div>
+  <p>Эта тройка объясняет, почему один и тот же стол выглядит по-разному у разных операторов. Регламент выплат неизменен: европейская рулетка платит 35 к 1 на номер у любого оператора, потому что это правило провайдера. А минимальная ставка, язык интерфейса и то, засчитывается ли игра в отыгрыш бонуса, меняются от сайта к сайту, потому что это настройки оператора. Когда в обзоре казино пишут «честный стол» или «нечестный стол», речь почти всегда идёт об операторе и его выплатах, а не о провайдере: подделать физический раунд студии оператор не может, он лишь транслирует готовый поток.</p>
+  <div class="pst-scroll">
+    <table>
+      <caption>Кто за что отвечает перед игроком. Разделение ролей — ключ к тому, кому адресовать вопрос или претензию.</caption>
+      <thead><tr><th scope="col">Вопрос игрока</th><th scope="col">Отвечает</th><th scope="col">Чем подтверждается</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Выпал ли номер честно</th><td>провайдер / студия</td><td>сертификат лаборатории, Round ID, запись</td></tr>
+        <tr><th scope="row">Сколько платят за ставку</th><td>провайдер</td><td>таблица выплат в правилах стола</td></tr>
+        <tr><th scope="row">Минимум и максимум ставки</th><td>оператор в коридоре студии</td><td>таблица лимитов в интерфейсе стола</td></tr>
+        <tr><th scope="row">Когда придут деньги на карту</th><td>оператор</td><td>правила вывода на сайте, лицензия оператора</td></tr>
+        <tr><th scope="row">Куда жаловаться на спор</th><td>оператор, затем его регулятор</td><td>лицензия оператора, журнал раунда студии</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="pst-sec" id="studios">
+  <p class="pst-idx">02</p>
+  <h2>Четыре студии за русскими столами: Evolution, Pragmatic Play Live, Ezugi и LiveG24</h2>
+  <p>В русскоязычных live-казино живые столы почти всегда идут от одного из четырёх провайдеров. Evolution — крупнейший по числу столов и шоу-форматов, держит отдельные студии под разные языки. Pragmatic Play Live вырос быстро и силён в рулетке с множителями и шоу. Ezugi исторически строил столы под азиатский и русскоязычный рынок и первым дал недорогой вход. LiveG24 — меньшая студия, которую операторы берут ради выделенных столов под свой бренд. Для разбора правил важны не размеры, а то, какой регулятор выдал студии лицензию и какая лаборатория проверяет её оборудование: от этого зависит, чьему аудиту вы доверяете, садясь за стол.</p>
+  <div class="pst-scroll">
+    <table class="pst-wide">
+      <caption>Четыре провайдера по признакам, которые определяют правила и честность стола. Состав жанров — по открытым каталогам студий на 2026 год; привязка к регуляторам — по публичным реестрам лицензий.</caption>
+      <thead><tr><th scope="col">Провайдер</th><th scope="col">Основные студии</th><th scope="col">Лицензия провайдера</th><th scope="col">Лаборатория аудита</th><th scope="col">Формат столов</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="pst-sw pst-s1"></span>Evolution</th><td>Рига, Тбилиси, Мальта</td><td>MGA, UKGC, ряд локальных</td><td>GLI, eCOGRA</td><td>рулетка, карты, широкий набор шоу</td></tr>
+        <tr><th scope="row"><span class="pst-sw pst-s2"></span>Pragmatic Play Live</th><td>Бухарест</td><td>MGA, ONJN</td><td>GLI, BMM Testlabs</td><td>рулетка с множителями, карты, шоу</td></tr>
+        <tr><th scope="row"><span class="pst-sw pst-s3"></span>Ezugi</th><td>несколько студий, часть под русский язык</td><td>MGA, локальные</td><td>GLI, iTech Labs</td><td>рулетка, баккара, недорогой вход</td></tr>
+        <tr><th scope="row"><span class="pst-sw pst-s4"></span>LiveG24</th><td>Восточная Европа</td><td>Кюрасао, локальные</td><td>BMM Testlabs</td><td>выделенные столы под бренд оператора</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Разница в лицензиях провайдера не абстрактна. Студия под MGA или UKGC обязана хранить запись каждого раунда оговорённый срок, пускать аудитора без предупреждения и держать процедуру дилера по письменному регламенту; регулятор может затребовать видео по номеру раунда. Студия только под лицензией Кюрасао живёт по более мягким требованиям к хранению и аудиту. Это не делает её нечестной, но меняет вес вашего аргумента в споре: запись раунда у студии под MGA найти проще, и регулятор заставит её предъявить. Поэтому в лобби стоит смотреть не только на название провайдера, но и на то, под чьим флагом работает конкретная студия.</p>
+  <p>Второй практический вывод: язык дилера и часовой пояс студии — это тоже часть правил доступа. Evolution и Ezugi держат русскоязычные столы круглосуточно на основных жанрах, Pragmatic Play Live даёт русский язык на выделенных столах, LiveG24 собирает русскоязычную смену под конкретного оператора. Когда русский дилер объявляет «ставок больше нет», игрок ориентируется по голосу и не держит взгляд на таймере, а это прямо влияет на то, успеет ли он закрыть ставку до команды.</p>
+</section>
+
+<section class="pst-sec" id="calc">
+  <p class="pst-idx">03</p>
+  <h2>Расчёт ставки за столом: от коэффициента выплаты до округления</h2>
+  <p>Правило выплаты за живым столом короткое: выигрыш равен ставке, умноженной на коэффициент, плюс возврат самой ставки. Коэффициент задаёт провайдер и не меняет его — он напечатан в правилах стола и одинаков у всех операторов. Запись «35 к 1» на прямой ставке в рулетке означает, что к вернувшимся 1000 ₽ ставки добавляется 35 000 ₽ выигрыша; на экран выйдет 36 000 ₽. Чем выше коэффициент, тем реже выпадает событие: у номера шанс 1 из 37, у равных шансов — почти половина. Диаграмма показывает коэффициенты основных ставок, таблица под ней переводит их в деньги и вероятность для европейской рулетки с одним нулём.</p>
+  <figure class="pst-fig">
+    <svg viewBox="0 0 800 300" role="img" aria-labelledby="calc-t calc-d">
+      <title id="calc-t">Коэффициенты выплат по типам ставок от 1 к 1 до 35 к 1</title>
+      <desc id="calc-d">Шесть горизонтальных полос показывают коэффициент выплаты: прямая ставка 35, сплит 17, угол 8, блэкджек 1,5, дюжина 2 и равные шансы 1 к одному.</desc>
+      <g font-size="12" fill="var(--ink-3)">
+        <text x="140" y="18">0</text><text x="322" y="18">10×</text><text x="505" y="18">20×</text><text x="688" y="18">30×</text><text x="770" y="18">35×</text>
+      </g>
+      <g stroke="var(--rule)" stroke-dasharray="2 4">
+        <line x1="140" y1="26" x2="140" y2="272"/><line x1="323" y1="26" x2="323" y2="272"/><line x1="506" y1="26" x2="506" y2="272"/><line x1="689" y1="26" x2="689" y2="272"/><line x1="780" y1="26" x2="780" y2="272"/>
+      </g>
+      <g font-size="13" fill="var(--ink)">
+        <text x="12" y="52">Прямая на номер</text>
+        <text x="12" y="92">Сплит, 2 номера</text>
+        <text x="12" y="132">Угол, 4 номера</text>
+        <text x="12" y="172">Дюжина / колонка</text>
+        <text x="12" y="212">Блэкджек (натуральный)</text>
+        <text x="12" y="252">Равные шансы</text>
+      </g>
+      <g rx="3">
+        <rect x="140" y="40" width="640" height="18" rx="3" fill="var(--c1)"/>
+        <rect x="140" y="80" width="311" height="18" rx="3" fill="var(--c2)"/>
+        <rect x="140" y="120" width="146" height="18" rx="3" fill="var(--c3)"/>
+        <rect x="140" y="160" width="37" height="18" rx="3" fill="var(--c4)"/>
+        <rect x="140" y="200" width="27" height="18" rx="3" fill="var(--c2)"/>
+        <rect x="140" y="240" width="18" height="18" rx="3" fill="var(--c1)"/>
+      </g>
+      <g font-size="12" fill="var(--on-navy)" class="pst-num">
+        <text x="745" y="54">35×</text>
+      </g>
+      <g font-size="12" fill="var(--ink)" class="pst-num">
+        <text x="459" y="94">17×</text><text x="294" y="134">8×</text><text x="185" y="174">2×</text><text x="175" y="214">1,5×</text><text x="166" y="254">1×</text>
+      </g>
+    </svg>
+    <figcaption>Коэффициенты выплат по правилам провайдеров, 2026. Выплата = ставка × коэффициент + возврат ставки. Длина полосы пропорциональна коэффициенту по линейной шкале 0–35.</figcaption>
+    <div class="pst-scroll">
+      <table>
+        <caption>Те же коэффициенты в деньгах и вероятностях (европейская рулетка, один ноль, ставка 1000 ₽)</caption>
+        <thead><tr><th scope="col">Ставка</th><th scope="col">Коэффициент</th><th scope="col">Придёт на счёт, ₽</th><th scope="col">Шанс за раунд</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Прямая на номер</th><td class="pst-num">35 к 1</td><td class="pst-num">36 000</td><td class="pst-num">2,7 %</td></tr>
+          <tr><th scope="row">Сплит, 2 номера</th><td class="pst-num">17 к 1</td><td class="pst-num">18 000</td><td class="pst-num">5,4 %</td></tr>
+          <tr><th scope="row">Угол, 4 номера</th><td class="pst-num">8 к 1</td><td class="pst-num">9 000</td><td class="pst-num">10,8 %</td></tr>
+          <tr><th scope="row">Дюжина / колонка</th><td class="pst-num">2 к 1</td><td class="pst-num">3 000</td><td class="pst-num">32,4 %</td></tr>
+          <tr><th scope="row">Равные шансы</th><td class="pst-num">1 к 1</td><td class="pst-num">2 000</td><td class="pst-num">48,6 %</td></tr>
+          <tr><th scope="row">Блэкджек натуральный</th><td class="pst-num">3 к 2</td><td class="pst-num">2 500</td><td class="pst-num">≈ 4,8 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </figure>
+  <p>Перемножение коэффициента на ставку кажется простым, но за столом есть две тонкости расчёта. Первая — округление. Студия считает лимиты и выплаты в евро, а оператор пересчитывает их в рубли по своему курсу; при дробной выплате вроде блэкджека 3 к 2 с нечётной ставкой результат округляется по правилу стола, обычно в меньшую сторону до копейки или до рубля. Из-за этого «от 50 ₽» на одном сайте и «от 0,5 €» на другом — одна настройка студии, показанная разным курсом, и выигрыш тоже выйдет слегка разным. Вторая — побочные ставки: Perfect Pairs в блэкджеке, бонус на пару в баккаре, нейборсы в рулетке считаются по отдельным коэффициентам и часто имеют свой, более низкий потолок.</p>
+  <p>Важно отличать коэффициент выплаты от отдачи стола. Коэффициент — то, что платят за конкретную выигравшую ставку; отдача (RTP) — доля ставок, которая в среднем возвращается игрокам на длинной дистанции. У европейской рулетки с одним нулём теоретическая отдача около 97,3 %, у американской с двумя нулями — около 94,7 %, потому что лишний ноль не меняет коэффициент 35 к 1, но добавляет проигрышную ячейку. Поэтому при одинаковой таблице выплат европейский стол выгоднее американского: разницу создаёт не выплата, а число ячеек на колесе.</p>
+</section>
+
+<section class="pst-sec" id="limits">
+  <p class="pst-idx">04</p>
+  <h2>Лимиты стола: минимум входа и три потолка одной рулетки</h2>
+  <p>Лимит стола — это не одно число, а набор порогов. В лобби показывают минимальную ставку, но за кнопкой с лимитами скрывается отдельный потолок почти на каждый тип ставки. У рулетки их как минимум три: на прямую ставку на номер, на дюжину и на равные шансы. Разница между ними доходит до нескольких десятков раз, и причина в коэффициенте: выплата 35 к 1 на номере создаёт для оператора риск, который он ограничивает жёстче, чем выплату 1 к 1 на цвете. Таблица показывает типичные пороги по типам столов у операторов, работающих с рублём.</p>
+  <div class="pst-scroll">
+    <table class="pst-wide">
+      <caption>Коридор лимитов по типам живых столов, 2026. Нижняя граница зависит от оператора, верхняя — от того, общий это стол или выделенный. Расчётная модель по типичным настройкам.</caption>
+      <thead><tr><th scope="col">Тип стола</th><th scope="col">Минимум, ₽</th><th scope="col">Потолок на номер, ₽</th><th scope="col">Потолок на равные шансы, ₽</th><th scope="col">Чем задан потолок</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Рулетка, общий стол</th><td class="pst-num">50</td><td class="pst-num">20 000</td><td class="pst-num">500 000</td><td>риск выплаты 35 к 1 на номере</td></tr>
+        <tr><th scope="row">Рулетка с множителями</th><td class="pst-num">30</td><td class="pst-num">5 000</td><td class="pst-num">200 000</td><td>множитель повышает максимальную выплату</td></tr>
+        <tr><th scope="row">Блэкджек</th><td class="pst-num">200</td><td class="pst-num">—</td><td class="pst-num">250 000</td><td>лимит на бокс, побочные ставки ниже</td></tr>
+        <tr><th scope="row">Баккара</th><td class="pst-num">100</td><td class="pst-num">—</td><td class="pst-num">1 000 000</td><td>лимит на ничью ниже, чем на игрока</td></tr>
+        <tr><th scope="row">VIP-рулетка, выделенный стол</th><td class="pst-num">5 000</td><td class="pst-num">100 000</td><td class="pst-num">2 000 000</td><td>договор оператора со студией</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Коридор между минимумом и потолком задаёт провайдер, а конкретные числа внутри него выставляет оператор. Технически стол Evolution допускает вилку от небольшой ставки до миллионов, но один зал откроет рулетку от 50 ₽, другой — от 150 ₽, а третий поставит минимум 300 ₽, чтобы отсечь мелкую игру. На выделенных столах, которые студия сдаёт одному оператору, и дизайн свой, и потолок выше: там оператор берёт на себя больший риск в обмен на отдельный стол под брендом. Поэтому сравнивать залы по минимальной ставке имеет смысл только внутри одного типа стола и одного провайдера.</p>
+  <p>Отдельно стоит смотреть на потолок по той ставке, которую вы собираетесь делать. Игроку на равных шансах потолок на номер безразличен, а любителю ставить на конкретные числа важен именно он — и он всегда ниже. У блэкджека лимит задан на бокс и дублируется на побочные ставки вроде 21+3, где он обычно в десять раз ниже. У баккары ограничение на ставку «ничья» с выплатой 8 к 1 заметно ниже лимита на игрока или банкира. Перед сессией стоит открыть таблицу лимитов стола и найти строку со своей ставкой, а не ориентироваться на минимум из лобби.</p>
+</section>
+
+<section class="pst-sec" id="window">
+  <p class="pst-idx">05</p>
+  <h2>Окно ставок и команда «ставки сделаны»: задержка трансляции по секундам</h2>
+  <p>Главное правило времени за живым столом: приём ставок закрывается по таймеру сервера, а не по картинке на экране. Дилер объявляет «ставки сделаны» (no more bets), таймер в интерфейсе доходит до нуля, и всё, что нажато после, не принимается. Проблема в том, что видео приходит с задержкой трансляции. По современному транспорту WebRTC она меньше секунды, и экран совпадает с реальностью. Но если плеер откатился на HLS, задержка вырастает до 6–30 секунд, и игрок видит команду «ставки сделаны» уже тогда, когда реальный стол крутит колесо. Схема показывает один раунд рулетки по секундам и то, как его видят при разной задержке.</p>
+  <figure class="pst-fig">
+    <svg viewBox="0 0 800 270" role="img" aria-labelledby="win-t win-d">
+      <title id="win-t">Один раунд рулетки по секундам при разной задержке трансляции</title>
+      <desc id="win-d">Три дорожки от нуля до сорока пяти секунд: реальный стол, видео по WebRTC с задержкой менее секунды и видео по HLS с задержкой пятнадцать секунд. На HLS команда «ставки сделаны» видна, когда реальный приём уже закрыт.</desc>
+      <g font-size="12" fill="var(--ink-3)">
+        <text x="54" y="18">0 с</text><text x="208" y="18">10 с</text><text x="368" y="18">20 с</text><text x="528" y="18">30 с</text><text x="688" y="18">40 с</text><text x="760" y="18">45 с</text>
+      </g>
+      <g stroke="var(--rule)" stroke-dasharray="2 4">
+        <line x1="60" y1="26" x2="60" y2="236"/><line x1="220" y1="26" x2="220" y2="236"/><line x1="380" y1="26" x2="380" y2="236"/><line x1="540" y1="26" x2="540" y2="236"/><line x1="700" y1="26" x2="700" y2="236"/><line x1="780" y1="26" x2="780" y2="236"/>
+      </g>
+      <g font-size="13" fill="var(--ink)">
+        <text x="12" y="62">Реальный стол</text>
+        <text x="12" y="130">Видео WebRTC</text>
+        <text x="12" y="198">Видео HLS +15 с</text>
+      </g>
+      <!-- real -->
+      <g>
+        <rect x="60" y="70" width="320" height="16" rx="3" fill="var(--ok)"/>
+        <rect x="380" y="70" width="208" height="16" rx="3" fill="var(--mid)"/>
+        <rect x="588" y="70" width="192" height="16" rx="3" fill="var(--c4)"/>
+      </g>
+      <line x1="380" y1="64" x2="380" y2="92" stroke="var(--no)" stroke-width="2"/>
+      <text x="300" y="104" font-size="11" fill="var(--no)">«ставки сделаны» 20 с</text>
+      <!-- webrtc -->
+      <g>
+        <rect x="68" y="138" width="320" height="16" rx="3" fill="var(--ok)"/>
+        <rect x="388" y="138" width="200" height="16" rx="3" fill="var(--mid)"/>
+      </g>
+      <line x1="388" y1="132" x2="388" y2="160" stroke="var(--no)" stroke-width="2"/>
+      <text x="398" y="172" font-size="11" fill="var(--ok)">✓ видно к закрытию, игрок успевает</text>
+      <!-- hls -->
+      <g>
+        <rect x="300" y="206" width="320" height="16" rx="3" fill="var(--ok)" opacity=".55"/>
+      </g>
+      <line x1="620" y1="200" x2="620" y2="228" stroke="var(--no)" stroke-width="2"/>
+      <text x="300" y="200" font-size="11" fill="var(--no)">✕ «ставки сделаны» видно на 35 с — реальный приём давно закрыт</text>
+    </svg>
+    <figcaption>Раунд рулетки с окном приёма 20 с, 2026. Приём ставок — зелёный отрезок, вращение — охра, выплата — фиолетовый. Красная черта — момент команды «ставки сделаны». На HLS картинка сдвинута вправо на величину задержки.</figcaption>
+    <div class="pst-scroll">
+      <table>
+        <caption>Те же секунды: когда фаза наступает реально и когда её видит игрок при разной задержке</caption>
+        <thead><tr><th scope="col">Событие раунда</th><th scope="col">Реально, с</th><th scope="col">Видно по WebRTC, с</th><th scope="col">Видно по HLS, с</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Открытие приёма ставок</th><td class="pst-num">0</td><td class="pst-num">≈ 0,5</td><td class="pst-num">15</td></tr>
+          <tr><th scope="row">«Ставки сделаны»</th><td class="pst-num">20</td><td class="pst-num">≈ 20,5</td><td class="pst-num">35</td></tr>
+          <tr><th scope="row">Выпадение номера</th><td class="pst-num">33</td><td class="pst-num">≈ 33,5</td><td class="pst-num">48</td></tr>
+          <tr><th scope="row">Зачисление выплаты</th><td class="pst-num">45</td><td class="pst-num">≈ 45,5</td><td class="pst-num">60</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </figure>
+  <p>Откат на HLS происходит, когда сеть режет UDP: WebRTC ходит по UDP через серверы STUN и TURN, и публичный Wi-Fi, корпоративная сеть или мобильный оператор иногда блокируют этот трафик. Плеер за несколько секунд переключается на HLS по обычному HTTPS, картинка не пропадает, но задержка вырастает в десятки раз, а индикатора переключения в большинстве интерфейсов нет. Признак, что это случилось: таймер приёма закрывается, когда дилер на видео ещё собирает фишки с прошлого раунда. Лечится сменой сети или браузера; встроенные браузеры мессенджеров особенно часто срываются на HLS из-за урезанной поддержки WebRTC.</p>
+  <p>Отдельное правило защищает игрока при обрыве связи. Результат раунда приходит отдельным сигналом, не из видеопотока: если картинка оборвалась на последних секундах вращения, сервер всё равно получит выпавший номер и зачислит выигрыш по принятым ставкам. Поэтому обрыв видео не отменяет уже сделанную ставку. Отменяет её только официальная аннуляция раунда студией — когда шарик выскочил из колеса, карта упала или сбилось оборудование: тогда ставки возвращаются всем, а в истории появляется пометка. Отличать штатную аннуляцию от сбоя помогает именно журнал раунда, к которому переходим в разделе о споре.</p>
+</section>
+
+<section class="pst-sec" id="fair">
+  <p class="pst-idx">06</p>
+  <h2>Честность без ГСЧ: карты с чипом, сканер OCR и протокол дилера</h2>
+  <p>За слотом честность доказывает сертификат генератора случайных чисел: лаборатория проверяет, что алгоритм выдаёт равновероятные исходы. За живым столом генератора нет, исход создаёт физический предмет, поэтому проверка выстроена иначе — в четыре слоя. Понимать их полезно, чтобы отличать реальные гарантии от слов «проверенное казино» в рекламе оператора.</p>
+  <div class="pst-scroll">
+    <table class="pst-wide">
+      <caption>Четыре слоя честности живого стола и что именно проверяет каждый. Названия лабораторий и стандартов — реальные отраслевые ориентиры 2026 года.</caption>
+      <thead><tr><th scope="col">Слой</th><th scope="col">Механизм</th><th scope="col">Что подтверждает</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Оборудование</th><td>сертифицированное колесо, автошаффлер, башмак для карт</td><td>равновероятность исхода, отсутствие смещения колеса</td></tr>
+        <tr><th scope="row">Фиксация результата</th><td>RFID-метки в фишках и колесе, сканер OCR на картах</td><td>результат читает техника, а не только глаз дилера</td></tr>
+        <tr><th scope="row">Видеозапись</th><td>несколько камер, Round ID, история раундов</td><td>раунд можно поднять и пересмотреть по номеру</td></tr>
+        <tr><th scope="row">Аудит</th><td>лаборатория GLI, BMM Testlabs или iTech Labs; лицензия регулятора</td><td>процедуры и техника проверены независимой стороной</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>RFID и OCR — сердце современной честности живого стола. В рулетке колесо и каждая фишка несут радиометки, по которым система определяет выпавший сектор и позиции ставок независимо от того, что скажет дилер. В картах работает оптическое распознавание: сканер читает каждую карту при выходе из башмака, и именно поэтому интерфейс показывает сумму руки в блэкджеке раньше, чем игрок успевает её сложить. На столах «без очереди», где за одной рукой дилера сидят сотни игроков, OCR обязателен — без него система не рассчитала бы результат каждому отдельно. Расхождение между тем, что объявил дилер, и тем, что прочитала техника, автоматически останавливает раунд: это встроенная защита, а не редкость.</p>
+  <p>Протокол дилера — четвёртый элемент, который часто упускают. Дилер действует по письменному регламенту студии: запускает шарик в сторону, обратную вращению колеса, с определённой силой; тасует карты по заданной схеме или ставит сертифицированный автошаффлер; объявляет результат вслух и не трогает фишки до команды. Нарушение процедуры фиксируется супервайзером студии, который следит за несколькими столами по камерам. Поэтому «монтажных склеек» в честной трансляции не бывает: камера не переключается в момент выпадения результата, а дилер объявляет его в прямом эфире. Если в видео виден монтаж на решающей секунде или у стола вовсе не указан провайдер, это повод закрыть вкладку — такой «лайв» может идти через перепродавца без лицензии.</p>
+</section>
+
+<section class="pst-sec" id="dispute">
+  <p class="pst-idx">07</p>
+  <h2>Round ID и спор о раунде: что записывает студия и куда идёт жалоба</h2>
+  <p>Каждый раунд живого стола получает уникальный номер — Round ID. По нему студия хранит видеозапись, журнал ставок и данные RFID и OCR; срок хранения задаёт лицензия провайдера, у студий под MGA он измеряется месяцами. Для игрока Round ID — главный инструмент в споре: без номера раунда претензия превращается в «мне кажется», с номером — в запрос, на который студия обязана ответить записью. Номер виден в интерфейсе стола и в истории раундов, а также приходит в выписку по счёту у аккуратного оператора.</p>
+  <ol>
+    <li><b>Зафиксируйте раунд.</b> Запишите Round ID, время и свою ставку сразу, как заметили расхождение; сделайте скриншот истории стола, пока она доступна.</li>
+    <li><b>Обратитесь к оператору.</b> Спор идёт сначала в поддержку сайта, где вы играли: именно оператор держит ваш счёт и имеет договор со студией. Приложите номер раунда.</li>
+    <li><b>Оператор запрашивает запись.</b> По Round ID студия поднимает видео и журнал, сверяет результат с данными RFID и OCR и возвращает решение оператору.</li>
+    <li><b>Эскалация к регулятору.</b> Если оператор отказывает без разбора или тянет сверх своего регламента, обращение направляют регулятору, выдавшему лицензию оператора.</li>
+  </ol>
+  <p>Полезно понимать границу ответственности. Студия отвечает за факт раунда: выпал ли номер так, как показано, корректно ли посчитана выплата по коэффициенту. Оператор отвечает за деньги: принята ли ставка, зачислен ли выигрыш, не заблокирован ли вывод. Поэтому спор «неправильно выпало» и спор «не выводят деньги» идут по разным адресам, хотя начинаются оба с поддержки оператора. В первом случае решает запись студии, во втором — правила вывода и лицензия оператора. Смешивать их не стоит: жалоба регулятору студии на задержку вывода уйдёт в пустоту, потому что студия к кассе отношения не имеет.</p>
+  <p>Отдельно — об аннуляции. Когда студия объявляет раунд недействительным, ставки возвращаются всем участникам, и в истории это помечено. Такая аннуляция законна и защищает игрока: она нужна при выскочившем шарике, упавшей карте или сбое оборудования. Подозрительны обратные ситуации — когда результат в истории не совпадает с тем, что было в эфире, когда аннуляции идут без объявления или когда у стола нет Round ID и указания студии. Эти признаки стоит проверить до депозита: достаточно открыть историю любого стола в режиме просмотра и убедиться, что у раундов есть номера.</p>
+</section>
+
+<section class="pst-sec" id="license">
+  <p class="pst-idx">08</p>
+  <h2>Лицензия студии и лицензия оператора: два разных документа</h2>
+  <p>Самая частая путаница в правилах живой игры — между двумя лицензиями. Лицензия студии-провайдера разрешает производить и транслировать игру: она подтверждает, что оборудование прошло аудит, процедуры дилера описаны, записи хранятся. Лицензия оператора разрешает принимать ставки и хранить деньги игрока: она отвечает за кассу, вывод и разбор финансовых споров. Это разные документы разных компаний, и перед игрой стоит проверить оба — по их сочетанию видно, кому можно адресовать какую претензию.</p>
+  <div class="pst-scroll">
+    <table class="pst-wide">
+      <caption>Чем лицензия студии отличается от лицензии оператора. Регуляторы названы как реальные ориентиры 2026 года; принадлежность конкретного зала проверяется по реестру регулятора.</caption>
+      <thead><tr><th scope="col">Признак</th><th scope="col">Лицензия студии-провайдера</th><th scope="col">Лицензия оператора</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Кто держит</th><td>Evolution, Pragmatic Play Live, Ezugi, LiveG24</td><td>сайт, где вы играете</td></tr>
+        <tr><th scope="row">Что разрешает</th><td>производить и транслировать раунд</td><td>принимать ставки, хранить и выводить деньги</td></tr>
+        <tr><th scope="row">Типичный регулятор</th><td>MGA (Мальта), ONJN (Румыния), UKGC</td><td>Кюрасао после реформы LOK, локальные</td></tr>
+        <tr><th scope="row">За что отвечает</th><td>честность раунда, аудит оборудования</td><td>сохранность депозита, выплата, споры о деньгах</td></tr>
+        <tr><th scope="row">Куда жаловаться</th><td>через оператора в студию по Round ID</td><td>оператору, затем его регулятору</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Реформа Кюрасао LOK, вступившая в силу в 2024–2025 годах, изменила то, что раньше было слабым местом лицензий этого флага. До неё большинство сайтов работало по сублицензиям от нескольких мастер-держателей, и привлечь оператора к ответу было трудно. После реформы лицензия стала именной: её выдаёт напрямую государственный орган конкретному юридическому лицу, а данные публикуются в реестре. Это не делает Кюрасао равным Мальте по строгости, но даёт игроку проверяемую точку: можно открыть реестр и убедиться, что номер лицензии принадлежит именно тому юрлицу, которое указано в подвале сайта. Реестры регуляторов открыты: <a href="https://www.authorisation.mga.org.mt/" rel="nofollow noopener" target="_blank">реестр лицензиатов MGA</a> и <a href="https://gaming.curacao/" rel="nofollow noopener" target="_blank">портал лицензий Кюрасао</a> позволяют сверить номер.</p>
+  <p>Для игрока из России важен ещё один слой. По 244-ФЗ онлайн-игры с живым дилером внутри страны не лицензируются, поэтому все четыре провайдера работают через офшорных операторов, а внутрироссийской инстанции для жалобы нет. Механика честности раунда от этого не меняется — она держится на лицензии студии, а не оператора, — но маршрут финансового спора ведёт только к регулятору оператора за рубежом. Для игроков из других стран СНГ режимы различаются: Армения и Грузия выдают собственные лицензии на онлайн-игры, Казахстан ограничивает онлайн-сегмент, и русскоязычные столы тех же студий там доступны через местных лицензиатов с местным маршрутом жалобы.</p>
+</section>
+
+<section class="pst-sec" id="faq">
+  <p class="pst-idx">09</p>
+  <h2>Короткие ответы по правилам живого стола</h2>
+  <details class="pst-faq"><summary>Чем live-стол отличается от обычного слота в правилах игры?</summary><div class="pst-ans"><p>Слот работает на генераторе случайных чисел: исход вычисляет сертифицированная программа на сервере. За живым столом исхода нет внутри программы — его создаёт физический предмет: колесо, карты из башмака, кости. Правила такого стола описывают не алгоритм, а процедуру: когда дилер принимает ставки, когда объявляет «ставки сделаны», как вскрывает карту, что делает при ошибке. Поэтому проверка честности тоже другая: вместо сертификата ГСЧ проверяют оборудование, камеры и журнал раундов.</p></div></details>
+  <details class="pst-faq"><summary>Кто задаёт лимиты стола — провайдер или оператор?</summary><div class="pst-ans"><p>Студия-провайдер задаёт коридор: технический минимум и максимум, которые допускает стол. Оператор внутри этого коридора выставляет свои числа и показывает их в лобби. Поэтому один и тот же стол Evolution в двух залах принимает ставку от 50 ₽ на одном и от 150 ₽ на другом. Верхняя граница на выделенном столе, который студия сдаёт одному оператору, оговаривается в договоре и обычно выше, чем на общем.</p></div></details>
+  <details class="pst-faq"><summary>Почему результат на видео появляется позже, чем закрылся приём ставок?</summary><div class="pst-ans"><p>Между событием в студии и картинкой на экране есть задержка трансляции. По WebRTC она меньше секунды, и таймер на экране совпадает с реальным. При откате на HLS задержка вырастает до 6–30 секунд: игрок видит команду «ставки сделаны» и выпавший номер уже после того, как реальный стол закрыл приём. Ставку это не отменяет — она принята по таймеру сервера, а не по картинке, но играть вслепую неудобно. Помогает смена сети или браузера, которая возвращает поток на WebRTC.</p></div></details>
+  <details class="pst-faq"><summary>Как проверить честность стола, если генератора случайных чисел нет?</summary><div class="pst-ans"><p>Смотрят на четыре вещи. Первое: у стола указан провайдер и его сертификация лабораторией — GLI по стандарту GLI-19, BMM Testlabs или iTech Labs проверяют колесо, башмак и логику выплат. Второе: каждый раунд имеет номер Round ID и попадает в историю. Третье: карты читаются сканером OCR, а фишки в колесе и позиции на столе отслеживаются по RFID, поэтому результат фиксируется техникой, а не только глазом дилера. Четвёртое: в кадре нет монтажных склеек в момент выпадения результата.</p></div></details>
+  <details class="pst-faq"><summary>Что делать, если возник спор о выплате за живым столом?</summary><div class="pst-ans"><p>Нужно записать номер раунда Round ID и время. Жалоба идёт сначала в поддержку оператора, у которого вы играли; оператор запрашивает у студии запись раунда и журнал ставок по этому номеру. Студия поднимает видео с камеры и данные RFID и OCR, сверяет результат и возвращает решение через оператора. Если оператор отказывает без разбора, обращение направляют регулятору, выдавшему лицензию оператора. Сроки зависят от регламента студии и обычно укладываются в несколько дней.</p></div></details>
+  <details class="pst-faq"><summary>Лицензия студии и лицензия оператора — это одно и то же?</summary><div class="pst-ans"><p>Нет, это два разных документа. Лицензия студии-провайдера (например, MGA на Мальте или ONJN в Румынии) разрешает производить и транслировать игру и подтверждает аудит оборудования. Лицензия оператора разрешает принимать ставки и хранить деньги игрока; для русскоязычных залов это чаще Кюрасао после реформы LOK, где лицензия стала именной. Честность раунда отвечает за лицензию студии, а сохранность депозита и выплату — за лицензию оператора.</p></div></details>
+</section>
+
+<section class="pst-sec" id="updates">
+  <p class="pst-idx">10</p>
+  <h2>Когда правила столов меняются и где это отмечать</h2>
+  <div class="pst-feed">
+    <p>Регламенты студий и условия операторов пересматриваются несколько раз в год: меняются сроки хранения записей, появляются новые шоу-форматы со своими коэффициентами, Кюрасао докручивает реформу LOK, операторы правят лимиты под курс. Разборы на этой странице обновляются при заметных изменениях, дата последней правки стоит в начале. Короткие заметки между правками — о новых правилах столов, смене регуляторов и проблемах с трансляцией — выходят в телеграм-канале.</p>
+    <a class="pst-go" href="https://t.me/top_casino_2027" rel="noopener" target="_blank">Канал с заметками о правилах</a>
+  </div>
+</section>
+
+<section class="pst-sec" id="care">
+  <div class="pst-18">
+    <p><b>18+.</b> За живым столом раунды идут быстро: 25–40 кругов в час при ставке 500 ₽ означают оборот 12–20 тысяч рублей за час. Назначьте лимит на сессию до входа в лобби и пользуйтесь таймером сессии, если оператор его даёт. Если игра перестала быть развлечением, сделайте перерыв и обратитесь за помощью к специалистам по игровой зависимости.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="pst-foot">
+  <div class="pst-in">
+    <div><b>Протокол стола</b><br>Разбор условий и правил игры за живым столом для русскоязычного игрока. Редакционный материал, без партнёрских ссылок и реферальных кодов.</div>
+    <div><b>О числах</b><br>Коридоры лимитов, задержки трансляции и выплаты — расчётная модель по типичным настройкам операторов на 2026 год, не замер конкретного зала. Состав жанров и привязка к регуляторам — по открытым материалам студий и публичным реестрам.</div>
+    <div><b>Редакция «Протокол стола»</b><br>Обновлено 1 октября 2026. Страница не принимает ставки и не ведёт на кассы операторов.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('pstTheme');if(!b)return;b.hidden=false;
+  var r=document.documentElement;
+  try{var s=localStorage.getItem('pst-theme');if(s==='dark'||s==='light')r.setAttribute('data-theme',s);}catch(e){}
+  b.addEventListener('click',function(){
+    var dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);
+    var next=dark?'light':'dark';r.setAttribute('data-theme',next);
+    try{localStorage.setItem('pst-theme',next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
